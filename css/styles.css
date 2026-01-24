@@ -1,0 +1,203 @@
+/*Responsive se ajusta al ancho y la posición del encabezado*/
+@media (max-width: 768px) {
+  .encabezado-app {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .menu-principal {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+/* ENCABEZADO */
+
+.encabezado-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.titulo-app {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.titulo-app span,
+.inicio-titulo span {
+  font-weight: 400;
+  color: #555;
+}
+
+/* MENÚ */
+
+.menu-principal {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #222;
+}
+
+.menu-principal a:hover {
+  text-decoration: underline;
+}
+
+/* MIGAS DE PAN */
+
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin: 0 0.5rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #10b981;
+  text-decoration: underline;
+}
+
+/* INICIO */
+
+.inicio {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #10b981;
+  color: #ffffffdd;
+
+}
+
+.inicio-titulo {
+   font-size: 5rem;
+}
+
+.inicio-eslogan {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-top: -3rem ;
+  margin: 3rem;
+}
+
+.inicio-descripcion {
+  max-width: 600px;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+}
+
+/* PROYECTO */
+
+.proyecto {
+  padding: 2rem;
+  margin-top: -2rem;
+}
+
+.proyecto h2,h3{
+ color: #10b981;
+}
+.proyecto-cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.proyecto-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* ESPACIOS */
+
+.espacios {
+  padding: 2rem;
+  margin-top: -2rem;
+}
+
+.espacios h2,h3{
+  color: #10b981;
+}
+
+/* CARD INDIVIDUAL */
+.espacios-cards {
+   display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.espacio-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* TITULO DEL ESPACIO */
+.espacio-nombre {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* ODS */
+
+.ods {
+  padding: 2rem;
+  margin-top: -2rem;
+}
+
+.ods h2{
+  color: #10b981;
+}
+
+/* CONTACTO */
+
+.contacto {
+  padding: 2rem;
+  margin-top: -2rem;
+}
+
+.contacto h2{
+  color: #10b981;
+}
+
+.contacto-formulario {
+  max-width: 500px;
+}
+
+.contacto-input,
+.contacto-textarea {
+  width: 100%;
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
+
+.contacto-boton {
+  padding: 0.4rem 1rem;
+}
+
+/* FOOTER */
+.footer {
+  padding-left: 2rem;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  background-color: #ffff;
+  border-top: 1px solid #e0e0e0;
+}
+

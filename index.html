@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actívate - Bogotá</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Encabezado -->
+  <header class="encabezado-app">
+    <h1 class="titulo-app">
+      Actívate <span>Bogotá</span>
+    </h1>
+
+    <nav aria-label="Menú principal">
+      <ul class="menu-principal">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#espacios">Espacios Públicos</a></li>
+        <li><a href="#ods">ODS</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Miga de pan -->
+  <nav aria-label="Migas de pan" class="breadcrumb">
+    <ol>
+      <li><a href="#inicio">Inicio</a></li>
+      <li id="breadcrumb-actual"></li>
+    </ol>
+  </nav>
+
+  <!-- Contenido -->
+  <main>
+
+    <!--Inicio -->
+    <section id="inicio" class="inicio">
+      <h2 class="inicio-titulo">Actívate <span>Bogotá</span></h2>
+
+      <p class="inicio-eslogan">
+        Activa tu vida, activa tu ciudad
+      </p>
+
+      <p class="inicio-descripcion">
+        Descubre espacios públicos en Bogotá donde puedes moverte, entrenar y mejorar tu salud.
+      </p>
+
+      <p class="inicio-descripcion">
+        Actívate te ayuda a identificar lugares ideales para realizar actividad física al aire libre
+        según tu objetivo y tu ubicación.
+      </p>
+    </section>
+
+    <!-- Proyecto -->
+    <section id="proyecto" class="proyecto">
+      <h2 calss="proyecto-titulo">Nuestro Proyecto</h2>
+
+      <p class="proyecto-introduccion">
+        Actívate impulsa el movimiento y el bienestar conectando a las personas con los 
+        espacios públicos de su ciudad.
+      </p>
+
+      <div class="proyecto-cards">
+        <article class="proyecto-card">
+          <h3>Objetivo</h3>
+          <p>
+            Ayudar a las personas a encontrar espacios cercanos y adecuados para moverse, 
+            entrenar y mantenerse activas.
+          </p>
+        </article>
+
+        <article class="proyecto-card">
+          <h3>Comunidad</h3>
+          <p>
+            Crear comunidad a través del movimiento, conectando personas que comparten un 
+            estilo de vida activo.
+          </p>
+        </article>
+
+        <article class="proyecto-card">
+          <h3>Impacto</h3>
+          <p>
+            Contribuir a la construcción de ciudades más activas, saludables y llenas de vida.
+          </p>
+        </article>
+      </div>
+
+      <div class="proyecto-mision">
+        <h3>Nuestra misión</h3>
+        <p>
+          Usar la tecnología como una herramienta para activar ciudades, conectar personas
+          motivándolas a moverse, compartir y adoptar hábitos saludables en su vida diaria.
+        </p>
+      </div>
+    </section>
+
+    <!-- Espacios -->
+ <section id="espacios" class="espacios">
+  <h2>Espacios Públicos</h2>
+
+  <p class="espacios-introduccion">
+    Explora algunos de los principales espacios públicos de Bogotá donde puedes realizar
+    actividad física, entrenar al aire libre y compartir con la comunidad.
+  </p>
+
+  <!-- Contenedor de cards la idea es hacer esto dinámico con la API-->
+  <div class="espacios-cards">
+
+    <!-- Card 1 -->
+    <article class="espacio-card">
+      <h3 class="espacio-nombre">Parque Simón Bolívar</h3>
+
+      <p class="espacio-tipo">Parque Metropolitano</p>
+
+      <p class="espacio-descripcion">
+        Uno de los parques más grandes de la ciudad, ideal para actividades deportivas,
+        recreativas y eventos al aire libre.
+      </p>
+
+      <ul class="espacio-actividades">
+        <li>Caminata</li>
+        <li>Running</li>
+        <li>Ciclismo</li>
+        <li>Entrenamiento funcional</li>
+      </ul>
+
+      <p class="espacio-ubicacion">
+        Ubicación: Localidad de Teusaquillo
+      </p>
+
+      <!-- Aqui la idea es poner imagen -->
+    </article>
+
+    <!-- Card 2 -->
+    <article class="espacio-card">
+      <h3 class="espacio-nombre">Parque Juan Bosco</h3>
+
+      <p class="espacio-tipo">Parque Urbano</p>
+
+      <p class="espacio-descripcion">
+        Espacio comunitario enfocado en el bienestar local, con zonas verdes y
+        áreas para actividad física ligera.
+      </p>
+
+      <ul class="espacio-actividades">
+        <li>Caminata</li>
+        <li>Estiramientos</li>
+        <li>Recreación</li>
+      </ul>
+
+      <p class="espacio-ubicacion">
+        Ubicación: Localidad de Ciudad Bolivar
+      </p>
+      <!-- Aqui la idea es poner imagen -->
+    </article>
+
+    <!-- Card 3 -->
+    <article class="espacio-card">
+      <h3 class="espacio-nombre">Polideportivo Distrital</h3>
+
+      <p class="espacio-tipo">Escenario Deportivo</p>
+
+      <p class="espacio-descripcion">
+        Instalación deportiva equipada para entrenamientos estructurados y
+        actividades deportivas organizadas.
+      </p>
+
+      <ul class="espacio-actividades">
+        <li>Calistenia</li>
+        <li>Deportes de equipo</li>
+        <li>Entrenamiento guiado</li>
+      </ul>
+
+      <p class="espacio-ubicacion">
+        Ubicación: Distrito deportivo
+      </p>
+      <!-- Aqui la idea es poner imagen -->
+    </article>
+  </div>
+</section>
+
+    <!-- ODS -->
+    <section id="ods" class="ods">
+      <h2 class="ods-titulo"> Objetivo de Desarrollo Sostenible</h2>
+      <p class="ods-descripcion">
+        Este proyecto se alinea con el ODS 3: Salud y Bienestar.
+      </p>
+    </section>
+
+    <!-- Contacto -->
+<section id="contacto" class="contacto">
+  <h2 class="contacto-titulo">Contacto</h2>
+
+  <p class="contacto-descripcion">
+    ¿Tienes sugerencias, conoces un espacio público o quieres aportar al proyecto?
+    Escríbenos y ayúdanos a activar tu ciudad.
+  </p>
+
+  <form class="contacto-formulario" aria-label="Formulario de contacto">
+
+    <div class="contacto-campo">
+      <label for="nombre" class="contacto-etiqueta">Nombre</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        class="contacto-input"
+        required
+      >
+    </div>
+
+    <div class="contacto-campo">
+      <label for="correo" class="contacto-etiqueta">Correo electrónico</label>
+      <input
+        type="email"
+        id="correo"
+        name="correo"
+        class="contacto-input"
+        required
+      >
+    </div>
+
+    <div class="contacto-campo">
+      <label for="mensaje" class="contacto-etiqueta">Mensaje</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        class="contacto-textarea"
+        rows="4"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="contacto-boton">
+      Enviar
+    </button>
+
+  </form>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer-descripcion">Actívate Bogotá | Salud y Bienestar - Espacio Para Redes Sociales Copyright etc</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
