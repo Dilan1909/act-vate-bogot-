@@ -78,7 +78,7 @@
 
 .inicio {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   background-color: #10b981;
   color: #ffffffdd;
 
@@ -111,7 +111,8 @@
 .proyecto h2,h3{
  color: #10b981;
 }
-.proyecto-cards {
+
+.cards {
   display: flex;
   gap: 1.5rem;
   margin-top: 2rem;
@@ -134,18 +135,14 @@
   color: #10b981;
 }
 
-/* CARD INDIVIDUAL */
-.espacios-cards {
-   display: flex;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
+/* CARD INDIVIDUAL ESPACIOS */
 
 .espacio-card {
   border: 1px solid #ddd;
   padding: 1.5rem;
   border-radius: 8px;
 }
+
 
 /* TITULO DEL ESPACIO */
 .espacio-nombre {
@@ -162,6 +159,14 @@
 
 .ods h2{
   color: #10b981;
+}
+
+/* CARD INDIVIDUAL METAS -ODS*/
+
+.meta-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
 }
 
 /* CONTACTO */
@@ -191,13 +196,5 @@
 }
 
 /* FOOTER */
-.footer {
-  padding-left: 2rem;
-  position:fixed;
-  bottom: 0;
-  width: 100%;
-  height: 8%;
-  background-color: #ffff;
-  border-top: 1px solid #e0e0e0;
-}
+
 
