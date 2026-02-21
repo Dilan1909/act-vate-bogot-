@@ -25,12 +25,14 @@
 .titulo-app {
   margin: 0;
   font-size: 1.4rem;
+ 
 }
 
 .titulo-app span,
 .inicio-titulo span {
   font-weight: 400;
   color: #555;
+  font-weight: bolder;
 }
 
 /* MENÚ */
@@ -46,7 +48,9 @@
 .menu-principal a {
   text-decoration: none;
   font-weight: 500;
-  color: #222;
+  color: #ddd;
+  
+  
 }
 
 .menu-principal a:hover {
@@ -85,7 +89,7 @@
 }
 
 .inicio-titulo {
-   font-size: 5rem;
+  font-size: 5rem;
 }
 
 .inicio-eslogan {
@@ -106,22 +110,47 @@
 .proyecto {
   padding: 2rem;
   margin-top: -2rem;
+  text-align: center;
+  font-weight: lighter;
 }
 
 .proyecto h2,h3{
- color: #10b981;
+  color: #10b981;
 }
 
 .cards {
   display: flex;
   gap: 1.5rem;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .proyecto-card {
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 300px;   /* Cada tarjeta ocupa mínimo 300px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.proyecto-mision {
+  border-left: 4px solid #10b981;
+  padding: 2rem;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  background-color: #f0fdf4;
+  padding: 20px;
+  text-align: left;
+  flex: 1 1 300px;   /* Cada tarjeta ocupa mínimo 300px */
+  
+  
 }
 
 /* ESPACIOS */
@@ -129,20 +158,66 @@
 .espacios {
   padding: 2rem;
   margin-top: -2rem;
+  text-align: center;
 }
 
 .espacios h2,h3{
   color: #10b981;
+  
+}
+
+.filtros-titulo{
+  text-align: left;
+  padding: 1rem;
+  border: 100px;
+  justify-content: center;
+  
+}
+.filtros-descripcion{
+  text-align: left;
+  padding: 1px;
+  box-sizing: border-box;
+}
+.espacios-filtros{
+  background-color: #f0fdf4;
+
 }
 
 /* CARD INDIVIDUAL ESPACIOS */
 
 .espacio-card {
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 300px;   /* Cada tarjeta ocupa mínimo 300px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.espacio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.espacio-actividades{
+  display: flex;
+  flex-wrap: wrap;   /* permite que bajen a otra línea */
+  gap: 12px;         /* espacio entre botones */
+  list-style: none;  /* quita viñetas */
+  padding: 0;
+  margin-top: 15px;
+}
+
+.espacio-actividades li{
+  background-color: #10b981;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;  /* efecto píldora */
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
 /* TITULO DEL ESPACIO */
 .espacio-nombre {
@@ -155,26 +230,56 @@
 .ods {
   padding: 2rem;
   margin-top: -2rem;
+  text-align: center;
+
 }
 
 .ods h2{
   color: #10b981;
 }
 
+.ods-proposito{
+  border-left: 4px solid #10b981;
+  padding: 2rem;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  background-color: #f0fdf4;
+  padding: 20px;
+  text-align: left;
+  flex: 1 1 300px;   /* Cada tarjeta ocupa mínimo 300px */
+}
+
 /* CARD INDIVIDUAL METAS -ODS*/
 
 .meta-card {
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+  flex: 1 1 300px;   /* Cada tarjeta ocupa mínimo 300px */
 }
+.meta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
 
 /* CONTACTO */
 
-.contacto {
-  padding: 2rem;
-  margin-top: -2rem;
+.contacto-titulo{
+  text-align: justify;
 }
+.contacto {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
 
 .contacto h2{
   color: #10b981;
@@ -182,19 +287,108 @@
 
 .contacto-formulario {
   max-width: 500px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;  
 }
 
 .contacto-input,
 .contacto-textarea {
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.8rem;
   box-sizing: border-box;
+  
 }
 
 .contacto-boton {
+  width: 500px;
   padding: 0.4rem 1rem;
+  background-color: #10b981;
+  border: none;
+  box-sizing: border-box;
 }
 
+.contacto-card{
+  border-left: 4px solid #10b981;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  background-color: #f0fdf4;
+  padding: 20px;
+  text-align: left;
+  flex: 1 1 300px;   /* Cada tarjeta ocupa mínimo 300px */
+}
+
+
+.horario-card{
+  margin-top: 1rem;
+  border-left: 4px solid #10b981;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  background-color: #f0fdf4;
+  padding: 20px;
+  text-align: left;
+  font-weight: lighter;
+  flex: 1 1 300px;
+}
 /* FOOTER */
+.footer {
+  background-color: #223040; 
+  padding: 10px 80px 80px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.footer-content,
+.footer-section {
+  width: 30%;
+}
+
+.footer h4 {
+  color: #10b981;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.footer p {
+  color: #d1d5db;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+
+.footer a {
+  color: #d1d5db;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+
+.footer a:hover {
+  color: #10b981;
+}
+
+.navegacion-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom {
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+
+}
+
 
 
